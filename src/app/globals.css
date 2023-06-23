@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text antialiased font-sans
+  }
+
+  * {
+    @apply p-0 m-0 box-border shadow-focus
+  }
+
+  &:focus {
+    @apply outline-none 
+  }
+
+  a {
+    @apply no-underline 
+  }
+
+  ul {
+    @apply list-none
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #374151;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #14b8a6;
+  border-radius: 14px;
+}
+  
+
+ 
