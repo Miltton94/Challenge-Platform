@@ -1,5 +1,5 @@
 import { prisma } from '@/lib/prisma'
-import { PrismaAdapter } from '@auth/prisma-adapter'
+import { PrismaAdapter } from '@next-auth/prisma-adapter'
 import GithubProvider from 'next-auth/providers/github'
 
 if (!process.env.GITHUB_CLIENT_ID || !process.env.GITHUB_CLIENT_SECRET)
